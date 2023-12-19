@@ -119,6 +119,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+py_if/
 
 # Spyder project settings
 .spyderproject
