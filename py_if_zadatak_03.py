@@ -22,14 +22,22 @@ header_bottom_line = f'  \t   \t\t{" " * len("Proizvodac")}\toznaka\t\tprve regi
 
 print(header_top_line)
 print(header_bottom_line)
-print('-' * 80)
+print('-' * 90)
 
 for key, value in vehicle_db.items():
     print(key, end='\t')
     for item in value:
-        print(item, end='\t\t')
+        if type(item) == str:
+            if len(item) > 9:
+                print(item, end='\t')
+            else:
+                print(item, end='\t\t')
+        else:
+            print(item, end='\t\t')
     print()
 
 
+print('-' * 90)
+print('\n\n')
 # Zavrsetak - pospremanje
 
