@@ -1,5 +1,7 @@
 # Generated 2 paragraphs, 160 words
 
+# ZADATAK: U generičkom tekstu 'Lorem ipsum ...' (https://www.lipsum.com/)
+# pronađite koliko puta se pojavljuje neka riječ, recimo sit
 
 text = ('Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
         'Duis convallis lorem efficitur lorem luctus, et aliquam orci accumsan. '
