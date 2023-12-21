@@ -23,3 +23,33 @@ text = ('Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
         'Nunc lacinia, dolor nec facilisis suscipit, lacus nibh rhoncus ex, vitae venenatis enim orci eget nunc.')
 
 print(text)
+
+# riječi_teksta = text.split()
+# print(riječi_teksta)
+# broj = riječi_teksta.count('nulla')
+# print(broj)
+
+rijeci = text.split(' ')
+# rijeci = rijeci.lower()
+
+# rijeci_lower = []
+# rijeci_lower = [rijec.lower() for rijec in rijeci]
+
+for rijec in rijeci:
+    original_rijec = rijec
+    # if rijec ima znak '.':
+    if '.' in rijec:
+        rijec = rijec.replace('.', '')
+    elif ';' in rijec:
+        rijec = rijec.replace(';', '')
+    elif ',' in rijec:
+        rijec = rijec.replace(',', '')
+
+    rijeci[rijeci.index(original_rijec)] = rijec.lower()
+
+
+
+
+rijec = input('Unesite rijec: ')
+word_count = rijeci.count(rijec) 
+print(word_count)
