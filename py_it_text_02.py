@@ -36,7 +36,9 @@ rijeci = text.split(' ')
 # rijeci_lower = [rijec.lower() for rijec in rijeci]
 
 for rijec in rijeci:
-    original_rijec = rijec
+    #original_rijec = rijec
+    index_rijec = rijeci.index(rijec)
+
     # if rijec ima znak '.':
     if '.' in rijec:
         rijec = rijec.replace('.', '')
@@ -44,8 +46,12 @@ for rijec in rijeci:
         rijec = rijec.replace(';', '')
     elif ',' in rijec:
         rijec = rijec.replace(',', '')
+    elif '!' in rijec:
+        rijec = rijec.replace('!', '')
 
-    rijeci[rijeci.index(original_rijec)] = rijec.lower()
+
+    #rijeci[rijeci.index(original_rijec)] = rijec.lower()
+    rijeci[index_rijec] = rijec.lower()
 
 
 
